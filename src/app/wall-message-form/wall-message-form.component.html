@@ -1,0 +1,14 @@
+<div class="container well well-lg" style='width:450px; margin-left: auto; margin-right: auto; margin-top:20px;'>
+    <form>
+      <div>
+      <h4 style="font-family:'Times New Roman', Times, serif; font-style:italic;">Speak now or forever remain silent!</h4>
+        <label for="message">Message</label>
+        <textarea rows="3" type="text" style="width:400px;" class="form-control" #content required></textarea>
+      </div>
+      <div>
+        <label for="alias">Nickname</label>
+        <input type="text" style="width:400px;"  class="form-control" value="anonoymous" onfocus="if(this.value == 'anonoymous') {this.value=''}" onblur="if(this.value == ''){this.value ='anonoymous'}" #alias required/>
+      </div>
+      <button style="margin-top:20px;" (click)="add(content.value,alias.value); content.value=''; alias.value='anonoymous';" class="btn btn-success">Shout out!</button>
+    </form>
+</div>
