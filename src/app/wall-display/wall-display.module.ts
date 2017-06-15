@@ -13,7 +13,7 @@ import { WallMessageService }  from '../wall-message.service';
 
 @NgModule({
   declarations: [
-	  //WallDisplayComponent,  
+	  WallDisplayComponent,  
 	  ],
   exports: [
 	  WallDisplayComponent,
