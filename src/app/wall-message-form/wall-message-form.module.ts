@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 //Imports for loading & configuring the in-memory web api
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService }  from '../in-memory-data.service';
+//import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+//import { InMemoryDataService }  from '../in-memory-data.service';
 
 import { WallDisplayComponent } from '../wall-display/wall-display.component';
 import { WallMessageFormComponent } from '../wall-message-form/wall-message-form.component';
@@ -26,7 +26,7 @@ import { AppComponent } from '../app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService)
+    //InMemoryWebApiModule.forRoot(InMemoryDataService)
   ],
   providers: [ WallMessageService,
 	  WallDisplayComponent ],

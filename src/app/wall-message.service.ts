@@ -8,7 +8,7 @@ import { Subject } from 'rxjs/Subject';
 export class WallMessageService {
   private headers = new Headers({'Content-Type': 'application/json'});
   //private messagesApi = 'api/messages';  // URL to web api
-  private messagesApi = 'http://localhost:3000/api/messages';  // URL to web api
+  private messagesApi = '/api/messages';  // URL to web api
   private messagesCache = [];
   messageListUpdate: Subject<WallMessage[]> = new Subject<WallMessage[]>();
   
