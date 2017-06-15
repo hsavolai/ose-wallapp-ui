@@ -10,7 +10,7 @@ import { Observable } from 'rxjs/Rx';
 })
 export class WallDisplayComponent implements OnInit{
 	
-  private messages;
+  public messages;
   private pollDelay=5000;
   private _subscription;
 

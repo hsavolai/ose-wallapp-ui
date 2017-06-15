@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { WallDisplayComponent } from './wall-display/wall-display.component';
-import { WallMessageFormComponent } from './wall-message-form/wall-message-form.component';
+import { WallDisplayModule } from './wall-display/wall-display.module';
+import { WallMessageFormModule } from './wall-message-form/wall-message-form.module';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -13,18 +13,19 @@ import { WallMessageService }  from './wall-message.service';
 @NgModule({
   declarations: [
 	  AppComponent,
-	  WallDisplayComponent, 
-	  WallMessageFormComponent],
+	  ],
   exports: [
 	  AppComponent
   ],
   imports: [
-	   BrowserModule,
+	  WallDisplayModule, 
+	  WallMessageFormModule,
+	  BrowserModule,
 	    FormsModule,
 	    HttpModule,
 	    //InMemoryWebApiModule.forRoot(InMemoryDataService)
   ],
   bootstrap: [ AppComponent ],
-  providers: [ WallDisplayComponent, WallMessageService ]
+  providers: [ WallMessageService ]
 })
 export class AppModule { }

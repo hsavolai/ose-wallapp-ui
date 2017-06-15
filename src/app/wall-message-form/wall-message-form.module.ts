@@ -16,11 +16,11 @@ import { AppComponent } from '../app.component';
 @NgModule({
   declarations: [
     WallMessageFormComponent,
-    WallDisplayComponent
+    //WallDisplayComponent
   ],
   exports: [
 	WallMessageFormComponent,
-	WallDisplayComponent
+	//WallDisplayComponent
   ],
   imports: [
     BrowserModule,
