@@ -30,7 +30,6 @@
     "@angular/compiler-cli": "^4.0.0",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
-    "@ngtools/webpack": "latest", 
     "angular-in-memory-web-api": "~0.3.2",
     "codelyzer": "~2.0.0",
     "jasmine-core": "~2.5.2",
