@@ -26,6 +26,7 @@
     "postcss-loader": "^2.0.6",
     "css-loader": "^0.28.4",
     "core-js": "^2.4.1",
+    "exports-loader":"^0.6.3",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
